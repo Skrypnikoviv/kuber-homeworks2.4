@@ -90,23 +90,12 @@ kubectl logs <pod-name>
 
 Пример вывода при проверке прав:
 
-```bash
-$ kubectl get pods
-NAME                     READY   STATUS    RESTARTS   AGE
-nginx-7c658794b9-2jq5h   1/1     Running   0          5d
+![image](https://github.com/user-attachments/assets/6f45576f-1830-4a07-a3c5-ac9418adc048)
 
-$ kubectl describe pod nginx-7c658794b9-2jq5h
-Name:         nginx-7c658794b9-2jq5h
-Namespace:    default
-...
-(описание пода выводится успешно)
+![image](https://github.com/user-attachments/assets/bcf1beb5-cb7c-4998-99b4-aece9a68eb72)
 
-$ kubectl logs nginx-7c658794b9-2jq5h
-/docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
-...
-(логи пода выводятся успешно)
+![image](https://github.com/user-attachments/assets/43d037fc-800e-4458-a9eb-cf7f7c66aad3)
 
-$ kubectl get deployments
-Error from server (Forbidden): deployments.apps is forbidden: User "user1" cannot list resource "deployments" in API group "apps" in the namespace "default"
-(как и ожидалось, доступа к другим ресурсам нет)
-```
+![image](https://github.com/user-attachments/assets/60aba52b-1a24-40af-b479-8a78d1fce32b)
+
+
